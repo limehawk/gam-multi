@@ -1,0 +1,16 @@
+[project]
+name = "gam-mcp"
+version = "0.1.0"
+description = "MCP server for Google Workspace administration via GAM7"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.26.0",
+]
+
+[project.scripts]
+gam-mcp = "gam_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
